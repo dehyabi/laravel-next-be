@@ -47,4 +47,10 @@ class PostController extends Controller
         //return response
         return new PostResource(true, 'Data Has Been Added Successfully', $post);
     }
+
+    public function show(Post $post)
+    {
+        //return single post as a resource
+        return new PostResource(true, 'Data Has Been Found', $post);
+    }
 }
