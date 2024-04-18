@@ -15,7 +15,7 @@ class PostResource extends JsonResource
   {
     parent::__construct($resource);
     $this->status = $status;
-    $this->message = $mesage;
+    $this->message = $message;
   }
 
   public function toArray($request)
